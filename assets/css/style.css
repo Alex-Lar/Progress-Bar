@@ -1,0 +1,271 @@
+/* Variables */
+:root {
+    --main-bg: #8695FF;
+    --white: #FFFFFF;
+    --icon-bg: #6D7FFF;
+    --progress-line: #D2D7FE;
+    --progress-text: #696C7F;
+    --progress-num: #7E8198;
+    --switch-btn: #97A4FF;
+}
+
+body {
+    padding: 20vh;
+    margin: 0;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+
+    background-color: var(--main-bg);
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* Removing margin from headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+
+
+.header_title {
+    margin-bottom: 20px;
+    text-align: center;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 58px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+
+
+/* Card */
+
+.card {
+    padding: 21px 50px 0;
+    margin: 0 auto;
+
+    width: 100%;
+    max-width: 680px;
+    height: 290px;
+
+    border-radius: .9em;
+    background-color: var(--white);
+
+    box-shadow: 0px 4px 11px #57575755;
+}
+
+.card_title {
+    margin-bottom: 25px;
+    text-align: center;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--icon-bg);
+}
+
+
+.card_bars {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.card_item {
+    margin-bottom: 30px;
+
+    width: 100%;
+    max-width: 250px;
+    height: 40px;
+}
+
+
+
+/* Bar Background*/
+
+.bar_background {
+    width: 100%;
+    max-width: 250px;
+    height: 40px;
+    position: absolute;
+
+    border-radius: 2em;
+    background-color: var(--progress-line);
+}
+
+
+#bar_programm {
+    max-width: 250px;
+}
+
+#bar_management {
+    max-width: 250px;
+}
+
+#bar_math {
+    max-width: 200px;
+}
+
+#bar_music {
+    max-width: 250px;
+}
+
+#bar_commun {
+    max-width: 250px;
+}
+
+#bar_photo {
+    max-width: 100px;
+}
+
+
+
+
+
+/* Icons */
+.bar_icon {
+    position: relative;
+    width: 100%;
+    max-width: 40px;
+    height: 100%;
+    max-height: 40px;
+
+    border-radius: 2em;
+    background-color: var(--icon-bg);
+}
+
+/* Модификаторы для иконок */
+.--icon {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+
+    font-size: 16px;
+    color: #fff;
+}
+
+.--special_bar {
+    position: absolute;
+    top: 30%;
+    left: 28%;
+
+}
+
+/* Bar Info */
+.bar_info {
+    display: flex;
+
+    position: relative;
+    top: 8px;
+    left: 35px;
+}
+
+.bar_num {
+    position: relative;
+    top: 3px;
+    left: 16px;
+
+    font-size: 15px;
+    font-weight: 300;
+
+    color: var(--progress-num);
+}
+
+.bar_name {
+    margin-left: 30px;
+    font-size: 18px;
+    font-weight: 500;
+
+    color: var(--progress-text);
+}
+
+
+
+/* Row Of Buttons */
+
+.button_row {
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+}
+
+
+.button {
+    margin-right: 25px;
+
+
+    width: 35px;
+    height: 35px;
+
+    text-decoration: none;
+
+    border: none;
+    border-radius: 2em;
+    background-color: var(--white);
+
+    box-shadow: 0px 4px 11px #57575755;
+}
+
+
+.-btn_icon {
+    position: relative;
+    top: 25%;
+    left: 28%;
+
+    color: var(--icon-bg);
+    font-size: 15px;
+}
+
+.--btn_special {
+    position: relative;
+    top: 25%;
+    left: 26%;
+}
+
+
+/* Switch Button */
+.button_switch {
+    width: 35px;
+    height: 35px;
+
+    text-decoration: none;
+
+    border: none;
+    border-radius: 2em;
+    background-color: var(--switch-btn);
+
+    box-shadow: 0px 4px 11px #57575755;
+}
+
+.-btn_switch {
+    position: relative;
+    top: 25%;
+    left: 25%;
+
+    color: var(--white);
+    font-size: 18px;
+}
