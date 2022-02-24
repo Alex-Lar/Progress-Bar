@@ -10,6 +10,17 @@
     --switch-btn: #97A4FF;
 }
 
+[data-theme="green"] {
+    --main-bg: #67D28E;
+    --white: #FFFFFF;
+    --icon-bg: #63D18B;
+    --progress-line: #D5F8E2;
+    --progress-text: #696C7F;
+    --progress-num: #7E8198;
+
+    --switch-btn: #6FE89B;
+}
+
 body {
     padding: 20vh;
     margin: 0;
@@ -121,8 +132,6 @@ h6 {
 
     transition: max-width .1s ease-in;
 }
-
-
 
 
 /*
