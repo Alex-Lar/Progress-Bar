@@ -6,6 +6,7 @@
     --progress-line: #D2D7FE;
     --progress-text: #696C7F;
     --progress-num: #7E8198;
+
     --switch-btn: #97A4FF;
 }
 
@@ -90,7 +91,10 @@ h6 {
 .card_bars {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+}
+
+.column {
+    width: 250px;
 }
 
 
@@ -108,41 +112,33 @@ h6 {
 
 .bar_background {
     width: 100%;
-    max-width: 250px;
+    max-width: 40px;
     height: 40px;
     position: absolute;
 
     border-radius: 2em;
     background-color: var(--progress-line);
-}
 
-
-#bar_programm {
-    max-width: 250px;
-}
-
-#bar_management {
-    max-width: 250px;
-}
-
-#bar_math {
-    max-width: 200px;
-}
-
-#bar_music {
-    max-width: 250px;
-}
-
-#bar_commun {
-    max-width: 250px;
-}
-
-#bar_photo {
-    max-width: 100px;
+    transition: max-width .1s ease-in;
 }
 
 
 
+
+/*
+* 0/5  || 40px
+*
+* 1/5  ||  82px
+*
+* 2/5  ||  124px
+*
+* 3/5  ||  166px
+*
+* 4/5  ||  208px
+*
+* 5/5  ||  250px
+*
+*/
 
 
 /* Icons */
@@ -228,6 +224,12 @@ h6 {
     background-color: var(--white);
 
     box-shadow: 0px 4px 11px #57575755;
+    transition: transform .15s linear, box-shadow .15s linear;
+}
+
+.button:hover {
+    transform: translate(0, -4px);
+    box-shadow: 0px 5px 15px #57575755;
 }
 
 
@@ -259,7 +261,15 @@ h6 {
     background-color: var(--switch-btn);
 
     box-shadow: 0px 4px 11px #57575755;
+    transition: transform .15s linear, box-shadow .15s linear;
 }
+
+
+.button_switch:hover {
+    transform: translate(0, -4px);
+    box-shadow: 0px 5px 15px #57575755;
+}
+
 
 .-btn_switch {
     position: relative;
@@ -269,3 +279,4 @@ h6 {
     color: var(--white);
     font-size: 18px;
 }
+
